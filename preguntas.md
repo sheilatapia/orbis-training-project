@@ -25,7 +25,7 @@ ES una herramienta que permite alojar aplicaciones, libs, etc. de manera isolada
 - Un contenedor de docker es mas ligero, porque usa los recurso basicos del kernel que no cambian de una pc a otra.
 
 7. ¿Es necesario depender de una imagen de docker base al crear una imagen nueva?
-Es necesario extender de una imagen padre (scrach)
+Es necesario extender de una imagen padre (scratch)
 
 8. ¿Por qué debo anteponer el nombre de usuario en una imagen docker nueva?
 Porque docker debe saber a que docker hub va  pushear
