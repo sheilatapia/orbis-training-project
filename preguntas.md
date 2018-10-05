@@ -5,6 +5,7 @@ Integrantes:
 
 # Preguntas
 
+## PARTE 4
 1. ¿Qué importancia tiene los tags en un proyecto?
 Los tags son versiones de un proyecto e informa 
 
@@ -32,3 +33,15 @@ Porque docker debe saber a que docker hub va  pushear
 
 9. ¿Que pasa si creo una imagen sin especificar una versión o tag, con qué versión se crea?
 Se crea con 'latest'
+
+## PARTE 5
+¿Porqué es necesario crear un contenedor con esta bandera -it ? ¿Qué pasa si no le pongo -it?
+Para que puedas interactuar con el contenedor y puedas acceder al terminarl. Si no coloco el flag -it, el contenedo se crea pero no podré interactuar con el.
+
+¿Para qué sirve ejecutar el comando bash al ejecutar una imagen?
+Sirve para que devuelva un terminar con el cual interactuar
+
+
+¿Cuál es la diferencia entre docker ps y docker ps -a?
+Docker ps : lista todos los contenedores encendidos
+docker ps -a: lista todos los contenedores.
