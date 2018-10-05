@@ -1,5 +1,7 @@
-# Ejercicio 1
-Capacitación: Git, bash y docker
-Integrantes:
-- Moises Inca
-- Cesar Casanova
+docker build -t sheilatapia/orbis-training-docker:0.1.0 .
+
+docker push sheilatapia/orbis-training-docker:0.1.0
+
+docker tag sheilatapia/orbis-training-docker:0.1.0 sheilatapia/orbis-training-docker:0.2.0
+docker push sheilatapia/orbis-training-docker:0.2.0
+
