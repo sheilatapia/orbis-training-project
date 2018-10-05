@@ -45,3 +45,6 @@ Sirve para que devuelva un terminar con el cual interactuar
 ¿Cuál es la diferencia entre docker ps y docker ps -a?
 Docker ps : lista todos los contenedores encendidos
 docker ps -a: lista todos los contenedores.
+
+Ejecutar el contenedor:
+docker run -it --rm sheilatapia/orbis-training-docker:0.2.0 bash
