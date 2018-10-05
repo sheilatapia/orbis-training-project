@@ -1,0 +1,7 @@
+version: "2"
+services:  
+  base: 
+    image: sheilatapia/orbis-training-docker:1.0.0
+    build:
+      context: ./base/
+

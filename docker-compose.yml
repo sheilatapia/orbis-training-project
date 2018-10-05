@@ -1,0 +1,6 @@
+version: "2"
+services: 
+  app: 
+    image: sheilatapia/orbis-training-docker:1.0.0
+    ports:
+      - 1080:80

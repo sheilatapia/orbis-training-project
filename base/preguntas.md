@@ -48,3 +48,43 @@ docker ps -a: lista todos los contenedores.
 
 Ejecutar el contenedor:
 docker run -it --rm sheilatapia/orbis-training-docker:0.2.0 bash
+
+1. ¿Cuál es la diferencia entre una imagen y un contenedor?
+El contenedor es contruído en base a una imagen, el contenedor puede convertirse en una imágen posteriormente.
+
+2. ¿Cómo listo las imágenes que hay en mi computadora?
+docker images 
+
+3. ¿Cómo salgo de un contenedor de docker?
+exit
+
+4. ¿Se elimina el contenedor al salir de ella?
+No, a menos que se le hya indicado al inicializar el contendor
+
+5. ¿Cómo elimino un contenedor?
+docker rm [nombre-del-contenedor] -f
+
+6. ¿Para qué es necesario el flag `-i`, `-t`, `--rm`?
+'-i'   : Es interactivo
+'-t'   : Abre el terminal
+'--rm' : Elimina automaticamente el contenedor al salir de el
+
+7. ¿Cómo verifico que el archivo creado se encuentra en la imagen?
+Colocando en el dockerfile lo siguiente: RUN ls /app
+
+8. ¿Cómo se comenta una linea de código en Dockerfile?
+Colocando lo siguiente antes del comentario: "#"
+
+## PARTE 6
+
+1. ¿Qué es NGINX?
+Es un servicio web que te permite alojar y ejecutar aplicaciones web, en lenguajes como PHP-NODE-PYTHON
+
+2. ¿Cómo expongo puertos en docker?
+docker run --expose 80 sheilatapia/orbis-training-docker:1.0.0 bash
+
+3. ¿Cómo especifico los puertos al levantar un contenedor (docker run)?
+docker run -p 1080:80 sheilatapia/orbis-training-docker:1.0.0 bash
+
+4. ¿Cómo hago 'forward' al levantar un contenedor (docker run)?
+docker run -p 192.168.1.2:1080:80 sheilatapia/orbis-training-docker:1.0.0 bash
